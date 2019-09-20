@@ -72,6 +72,11 @@ h3 {
 	font-weight: 600;
 }
 
+img {
+	display: block;
+	padding: 0;
+}
+
 .body0 {
 	font-size: 1.875rem;
 	font-weight: 400;
@@ -89,36 +94,32 @@ h3 {
 
 .button {
 	width: 100%;
-	max-width: 330px;
-	min-height: 74px;
+	max-width: 350px;
+	min-height: 64px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: none;
-	padding: 5px 15px;
-	font-size: 1.25rem;
+	border-bottom: 4px solid #ac8c55;
+	padding: 5px 15px 1px;
+	font-size: 0.875rem;
 	font-weight: 600;
-	color: #f3f3f3;
+	color: $p-text-color;
 	background-color: transparent;
-	// background-image: url(../img/button-bg@2x.png);
+	background-image: linear-gradient(to top, #ffe1c0, #c6a874);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	text-transform: none;
 	text-decoration: none;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
-	border-radius: 10px;
+	border-radius: 6px;
 	cursor: pointer;
 	outline: none;
-	&._head {
-		// background-image: url(../img/button-bg-2@2x.png);
-		max-width: 368px;
-		min-height: 111px;
-		border-radius: 15px;
-	}
+	box-sizing: border-box;
 	&:focus, &:active, &:hover {
-		background-image: none;
-		background-color: #009ff6;
-		color: $s-text-color;
+		background-image: linear-gradient(to top, #e5c39e, #ac8c55);
+		border: none;
+		padding: 5px 15px;
 	}
 }
 
@@ -128,6 +129,10 @@ h3 {
 
 ._s {
 	color: $s-text-color;
+}
+
+._g {
+	color: #d3ab72;
 }
 
 @import "grid";
