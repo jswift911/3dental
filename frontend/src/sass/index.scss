@@ -100,7 +100,7 @@ h3 {
 	font-weight: 600;
 	color: #f3f3f3;
 	background-color: transparent;
-	background-image: url(../img/button-bg@2x.png);
+	// background-image: url(../img/button-bg@2x.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	text-transform: none;
@@ -110,7 +110,7 @@ h3 {
 	cursor: pointer;
 	outline: none;
 	&._head {
-		background-image: url(../img/button-bg-2@2x.png);
+		// background-image: url(../img/button-bg-2@2x.png);
 		max-width: 368px;
 		min-height: 111px;
 		border-radius: 15px;
