@@ -1,0 +1,35 @@
+.about {
+  & ._container {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../img/pic.png");
+      position: absolute;
+      width: 594.5px;
+      height: 649.8px;
+      left: -57px;
+      top: -78px;
+    }
+  }
+  &__insider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    margin-top: 100px;
+  }
+  &__text {
+    margin-top: 27px;
+    margin-bottom: 266px;
+    text-align: right;
+    position: relative;
+  }
+  &__print {
+    position: absolute;
+    top: 72px;
+    right: -52px;
+  }
+}
