@@ -1,0 +1,50 @@
+.conditions {
+  padding: 0;
+  padding-bottom: 50px;
+  &__header {
+    padding: 50px 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #192a4a;
+  }
+  &__itemWrapper {
+    flex-direction: column;
+    border-radius: 6px;
+    border: dashed 1px #c49a6c;
+    &_text {
+      font-size: 22px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #192a4a;
+      &:first-of-type {
+        padding-top: 50px;
+      }
+      &:last-of-type {
+        padding-bottom: 50px;
+        padding-top: 40px;
+      }
+    }
+    &_items {
+      padding-top: 15px;
+      padding-bottom: 30px;
+      padding-left: 0;
+    }
+    &_item {
+      padding-top: 15px;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #192a4a;
+    }
+  }
+}

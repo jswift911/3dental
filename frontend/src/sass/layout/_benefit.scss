@@ -1,12 +1,13 @@
 .benefit {
-  & ._container {
+  &__wrapper {
+    padding: 32px;
+    box-sizing: border-box;
     border-radius: 6px;
     border: solid 2px #c49a6c;
   }
 &__insider {
     height: 100%;
     width: 100%;
-    margin: 32px;
     border-radius: 6px;
     border: dashed 1px #c49a6c;
     &_header {
@@ -39,5 +40,15 @@
             margin-bottom: 50px;
         }
     }
+  }
+  &__footer {
+    padding: 50px 0;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #192a4a;
   }
 }

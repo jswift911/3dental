@@ -1,0 +1,49 @@
+.package {
+    background-image: url("../img/package_bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    &__insider {
+        &_text {
+            padding-top: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+            &:last-of-type {
+                padding-top: 30px;
+                padding-bottom: 50px;
+            }
+        }
+        &_headerItems{
+            padding-top: 50px;
+            font-size: 22px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+
+        &_items {
+            margin: 0;
+            padding-left: 0;
+            padding-top: 30px;
+        }
+        &_item {
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+    }
+}
