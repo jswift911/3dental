@@ -1,49 +1,57 @@
 .package {
-    background-image: url("../img/package_bg.jpg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 50px;
-    &__insider {
-        &_text {
-            padding-top: 50px;
-            font-size: 22px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #ffffff;
-            &:last-of-type {
-                padding-top: 30px;
-                padding-bottom: 50px;
-            }
+    overflow: hidden;
+    padding: 50px 0 64px;
+    &__ellipse {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        width: 197px;
+        height: 197px;
+        transform: translate(63px, 64px);
+        background-image: url(../svg/ellipse3.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__box {
+        background-image: url("../img/package_bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 35px 95px;
+        border-radius: 6px;
+    }
+    &__caption {
+        padding: 15px 0;
+    }
+    &__text {
+        padding: 15px 0;
+        font-size: 1.375rem;
+        font-weight: bold;
+        color: #ffffff;
+        &._first {
+            padding-top: 35px;
+            font-weight: 400;
         }
-        &_headerItems{
-            padding-top: 50px;
-            font-size: 22px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #ffffff;
-        }
+    }
+    &__list {
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    &__item {
+        padding: 15px 0;
+    }
+    &__btn-box {
+        position: relative;
+        z-index: 2;
+        padding: 35px 0 15px;
+    }
+}
 
-        &_items {
-            margin: 0;
-            padding-left: 0;
-            padding-top: 30px;
-        }
-        &_item {
-            padding: 15px 0;
-            font-size: 18px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #ffffff;
+@media (max-width: 767px) {
+    .package {
+        &__box {
+            padding: 30px 30px 30px 50px;
         }
     }
 }
