@@ -11,7 +11,7 @@
 */
 
 @media (min-width: 768px) {
-  h1, .body0 {
+  h1 {
     font-size: 1.625rem;
   }
 
@@ -19,8 +19,8 @@
     font-size: 2.25rem;
   }
 
-  h3 {
-    font-size: 1.625rem;
+  h3, .body0 {
+    font-size: 1.75rem;
   }
 
   .body1 {
@@ -41,7 +41,7 @@
 */
 
 @media (min-width: 992px) {
-  h1, .body0 {
+  h1 {
     font-size: 2.25rem;
   }
 }
