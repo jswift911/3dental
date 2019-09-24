@@ -1,50 +1,48 @@
 .conditions {
-  padding: 0;
-  padding-bottom: 50px;
-  &__header {
+  &__caption {
     padding: 50px 0;
-    font-size: 28px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #192a4a;
   }
-  &__itemWrapper {
-    flex-direction: column;
+  &__number {
+    position: relative;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 63.4%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(../svg/bg.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto 726px;
+    }
+  }
+  &__box {
+    position: relative;
+    z-index: 2;
+    padding: 35px 95px;
     border-radius: 6px;
-    border: dashed 1px #c49a6c;
-    &_text {
-      font-size: 22px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #192a4a;
-      &:first-of-type {
-        padding-top: 50px;
-      }
-      &:last-of-type {
-        padding-bottom: 50px;
-        padding-top: 40px;
-      }
-    }
-    &_items {
-      padding-top: 15px;
-      padding-bottom: 30px;
-      padding-left: 0;
-    }
-    &_item {
-      padding-top: 15px;
-      font-size: 18px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #192a4a;
+    border: 1px dashed #c49a6c;
+  }
+  &__title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+  &__list {
+    padding: 0 0 15px;
+    margin: 0;
+  }
+  &__item {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .conditions {
+    &__box {
+      padding: 30px 30px 30px 50px;
     }
   }
 }
