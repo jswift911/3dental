@@ -16,8 +16,8 @@
     max-width: 350px;
   }
   &__investment {
-      font-size: 1.5rem;
-      font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   &__text-item {
     position: relative;
@@ -41,5 +41,17 @@
   }
   &__buttonDownload {
     padding-top: 40px;
+  }
+  &__btn {
+    ._btn-ico {
+      width: 24px;
+      height: 19px;
+      background-image: url(../svg/btn1.svg);
+    }
+    &:active {
+      ._btn-ico {
+        background-image: url(../svg/btn1-w.svg);
+      }
+    }
   }
 }

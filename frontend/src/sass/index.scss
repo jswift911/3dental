@@ -92,6 +92,14 @@ img {
 	font-weight: 400;
 }
 
+._btn-ico {
+	display: inline-block;
+	padding-right: 9px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	width: auto 100%;
+}
+
 .button {
 	width: 100%;
 	max-width: 350px;
@@ -106,20 +114,22 @@ img {
 	font-weight: 600;
 	color: $p-text-color;
 	background-color: transparent;
-	background-image: linear-gradient(to top, #ffe1c0, #c6a874);
+	background-image: linear-gradient(to right, #ffe1c0, #c6a874);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	text-transform: none;
 	text-decoration: none;
-	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 1px 5px 0px rgba(255, 225, 192, 0.5) 0%, 0px 3px 1px -2px rgba(198, 168, 116, 0.5);
 	border-radius: 6px;
 	cursor: pointer;
 	outline: none;
 	box-sizing: border-box;
-	&:focus, &:active, &:hover {
-		background-image: linear-gradient(to top, #e5c39e, #ac8c55);
-		border: none;
-		padding: 5px 15px;
+	&:focus, &:hover {
+		background-image: linear-gradient(to left, #ffe1c0, #c6a874);
+	}
+	&:active {
+		color: #fff;
+		background-image: linear-gradient(to right, rgb(198, 168, 116), rgb(255, 225, 192));
 	}
 }
 

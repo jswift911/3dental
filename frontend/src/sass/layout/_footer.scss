@@ -33,6 +33,18 @@
   &__item {
     padding: 5px 0;
   }
+  &__btn {
+    ._btn-ico {
+      width: 19px;
+      height: 19px;
+      background-image: url(../svg/btn3.svg);
+    }
+    &:active {
+      ._btn-ico {
+        background-image: url(../svg/btn3-w.svg);
+      }
+    }
+  }
 }
 .input {
   width: 100%;
