@@ -1,4 +1,5 @@
 import 'normalize.css';
+import './swiper.min.css';
 import './sass/index.scss';
 
 import './svg/logo.svg';
