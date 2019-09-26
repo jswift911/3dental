@@ -1,5 +1,5 @@
 footer.footer._s
-    ._container._row
+    form._container._row(action="/mail.php" method="post")
         .footer__insider
         h3.footer__caption._col-12._col-md-8._col-lg-6._offset-lg-1
             | На&nbsp;основе 30&nbsp;летнего опыта мы&nbsp;знаем,
@@ -9,13 +9,13 @@ footer.footer._s
             br
             | зарабатывать от&nbsp;2&nbsp;500&nbsp;000 тенге в&nbsp;месяц!
         ._col-12._col-lg-6._offset-lg-1
-            input.input(type="text" placeholder="Ваше имя")
+            input.input(name="name" type="text" placeholder="Ваше имя" required="required")
         ._col-12._col-lg-6._offset-lg-1
-            input.input(type="tel" placeholder="Ваш телефон")
+            input.input(name="phone" type="tel" placeholder="Ваш телефон" required="required")
         ._col-12._col-lg-6._offset-lg-1
-            input.input(type="email" placeholder="Ваш e-mail")
+            input.input(name="email" type="email" placeholder="Ваш e-mail")
         ._col-12._col-lg-11._offset-lg-1.footer__button-box
-            button.button.footer__btn
+            button.button.footer__btn(type="send")
                 i._btn-ico
                 | Связаться с&nbsp;франчайзером
         ._col-12._col-md-6._offset-lg-1.footer__list
