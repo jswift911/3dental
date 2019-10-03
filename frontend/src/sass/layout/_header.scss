@@ -1,0 +1,57 @@
+.header {
+  padding: 88px 0 130px;
+  background-image: url("../img/header-bg.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__caption {
+    padding-top: 79px;
+    padding-bottom: 24px;
+  }
+  &__logoWpapper {
+    justify-content: flex-end;
+  }
+  &__logo {
+    width: 100%;
+    max-width: 350px;
+  }
+  &__investment {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  &__text-item {
+    position: relative;
+    font-weight: 800;
+    padding-left: 26px;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 15px;
+      top: 17px;
+      bottom: 17px;
+      width: 2px;
+      background-color: #d3ab72;
+    }
+  }
+  &__text-small {
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+  &__buttonDownload {
+    padding-top: 40px;
+  }
+  &__btn {
+    ._btn-ico {
+      width: 24px;
+      height: 19px;
+      background-image: url(../svg/btn1.svg);
+    }
+    &:active {
+      ._btn-ico {
+        background-image: url(../svg/btn1-w.svg);
+      }
+    }
+  }
+}

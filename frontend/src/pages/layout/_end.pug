@@ -1,0 +1,39 @@
+input#modal-close.modal__checkbox(type="checkbox")
+aside.modal
+    label.modal__bg(for="modal-close")
+    ._col-12.modal__form-box
+        form._row.payment__form._p-n(action="/mail.php" method="POST")
+            ._col-12
+                input.input(name="name" type="text" placeholder="Ваше имя" required="required")
+            ._col-12
+                input.input(name="phone" type="tel" placeholder="Ваш телефон" required="required")
+            ._col-12
+                input.input(name="email" type="email" placeholder="Ваш e-mail")
+            ._col-12
+                button.button.footer__btn(type="send")
+                    i._btn-ico
+                    | Связаться с&nbsp;франчайзером
+            .form-group(style="margin-left: 14px;margin-bottom: 11px;display: flex;align-items: center;")
+                input#check2(type="checkbox" checked="checked" required="required" style="margin-right: 6px;width: 15px;height: 15px;margin-top: -2px;")
+                label._s(for="check2")
+                    | Даю согласие на&nbsp;обработку&nbsp;
+                    a.link._s(href="/privacy-policy/") персональных данных
+    label.modal__close(for="modal-close")
+
+| <script src="/swiper.min.js"></script>
+| <script>
+|   var swiper = new Swiper('.swiper-container', {
+|     slidesPerView: 1,
+|     centeredSlides: true,
+|     spaceBetween: 36,
+|     loop: true,
+|     pagination: {
+|       el: '.swiper-pagination',
+|       clickable: true,
+|     },
+|     navigation: {
+|       nextEl: '.photo__btn-next',
+|       prevEl: '.photo__btn-prev',
+|     },
+|   });
+| </script>

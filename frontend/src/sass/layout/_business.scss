@@ -1,0 +1,110 @@
+.business {
+  position: relative;
+  padding: 123px 0 42px;
+  overflow: hidden;
+  &__ellipse-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__ellipse {
+    position: absolute;
+    width: 369px;
+    height: 369px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../svg/ellipse1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+    transform: translateX(180px);
+  }
+  &__caption {
+    padding: 19px 15px;
+  }
+  &__line {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    transform: translateX(-35%);
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 4px;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #d3ab72;
+    }
+  }
+  &__big-text {
+    display: inline-block;
+    min-width: 190px;
+    padding: 12px 30px 12px 0;
+    font-size: 3rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    &._plus:after {
+      position: absolute;
+      content: '+';
+      top: 25px;
+      font-size: 36px;
+    }
+    &._from {
+      padding-left: 25px;
+      &:before {
+        position: absolute;
+        content: 'от';
+        top: 20px;
+        left: 15px;
+        font-size: 24px;
+      }
+    }
+  }
+  &__text {
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .business {
+    &__big-text {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .business {
+    &__big-text {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .business {
+    &__ellipse-box {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .business {
+    &__big-text {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .business {
+    &__big-text {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.about {
+  overflow: hidden;
+  &__woman {
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  &__logo-box {
+    padding-top: 81px;
+  }
+  &__logo {
+    width: 100%;
+    max-width: 196px;
+    margin: 0 auto;
+  }
+  &__text-box {
+    position: relative;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      right: 0;
+      bottom: 0;
+      width: 106px;
+      height: 106px;
+      transform: translate(52px, 80px);
+      background-image: url(../svg/ico.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+    padding-top: 27px;
+    text-align: right;
+  }
+  &__print {
+    position: absolute;
+    top: 72px;
+    right: -52px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    &__insider {
+      order: -1;
+    }
+    &__text {
+      text-align: left;
+    }
+  }
+}

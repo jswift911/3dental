@@ -1,0 +1,72 @@
+.footer {
+  position: relative;
+  background-image: url("../img/footer-bg.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 85px 0 80px;
+  &__caption {
+
+  }
+  &__text {
+    padding-bottom: 35px;
+    font-weight: 900;
+  }
+  &__insider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/woman.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left bottom;
+  }
+  &__button-box {
+    padding: 35px 15px 80px;
+  }
+  &__list {
+    font-size: 14px;
+    max-width: 190px;
+  }
+  &__item {
+    padding: 5px 0;
+  }
+  &__btn {
+    ._btn-ico {
+      width: 19px;
+      height: 19px;
+      background-image: url(../svg/btn3.svg);
+    }
+    &:active {
+      ._btn-ico {
+        background-image: url(../svg/btn3-w.svg);
+      }
+    }
+  }
+}
+.input {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  padding: 5px 30px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-weight: 300;
+  box-sizing: border-box;
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #c6a874;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__insider {
+      display: none;
+    }
+  }
+}
